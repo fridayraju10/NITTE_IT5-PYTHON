@@ -25,3 +25,11 @@ d2 = datetime.strptime(date_str2, "%Y-%m-%d")
 
 diff = d2 - d1
 print("Difference:", abs(diff.days), "days")
+------------------------------------------------------------
+from datetime import datetime
+import pytz
+
+a = pytz.timezone('Asia/Kolkata')
+b = datetime.now(a)
+print(b)
+----------
